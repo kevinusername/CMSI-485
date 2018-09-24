@@ -17,11 +17,24 @@ def heuristic_cost(state, goal):
     return abs(goal[1] - state[1]) + abs(goal[0] - state[0])
 
 
+def sum_cost(node):
+    return node.totalCost + node.heuristicCost
+
+
 def solve(problem, initial, goals):
-    frontier = set(SearchTreeNode(initial, none,  ))
+    frontier = set(SearchTreeNode(initial, None, None,
+                                  0, heuristic_cost(initial, goals[0])))
     discovered = set()
 
+    while frontier:
 
+        lowest = SearchTreeNode(None, None, None, float('inf'), 0)
+
+        for node in frontier:
+            if sum_cost(node) < sum_cost(lowest):
+                lowest = node
+
+        
 
 
 class PathfinderTests(unittest.TestCase):

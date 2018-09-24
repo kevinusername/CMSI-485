@@ -33,3 +33,6 @@ class SearchTreeNode:
         self.parent = parent
         self.totalCost = totalCost
         self.heuristicCost = heuristicCost
+
+    def f(self):
+        return totalCost + heuristicCost
