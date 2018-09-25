@@ -12,6 +12,7 @@ from SearchTreeNode import SearchTreeNode
 import unittest
 from queue import PriorityQueue
 
+
 # Same code from Classwork #1
 def generate_path(node):
     solution = []
@@ -50,6 +51,7 @@ def solve(problem, initial, goals):
 
         # node with lowest h(n) + g(n) score
         current = frontier.get_nowait()[2]
+        graveyard.add(current.state)
 
         # If it satisfies the goal, return its path/solution
         if current.state == goals[0]:
@@ -64,6 +66,9 @@ def solve(problem, initial, goals):
                 frontier.put_nowait((new_node.totalCost + new_node.heuristicCost, tie_breaker, new_node))
                 # Increase to ensure nodes are never compared by queue
                 tie_breaker += 1
+
+    # Temp solution of exiting upon no path found
+    exit("no path found")
 
 
 class PathfinderTests(unittest.TestCase):
