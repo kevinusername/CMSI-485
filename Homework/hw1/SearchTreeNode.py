@@ -1,4 +1,4 @@
-'''
+"""
 SearchTreeNodes contain the following information for BFS:
 
 === state ===
@@ -22,14 +22,14 @@ In the notes, we refer to this value as being evaluated through g(n)
 === heuristicCost ===
 The heuristic estimate of cost to be incurred from this node to the
 optimal solution
-'''
+"""
+
 
 class SearchTreeNode:
-    
+
     def __init__(self, state, action, parent, totalCost, heuristicCost):
         self.state = state
         self.action = action
         self.parent = parent
         self.totalCost = totalCost
         self.heuristicCost = heuristicCost
-    

@@ -1,11 +1,11 @@
-'''
+"""
 The Pathfinder class is responsible for finding a solution (i.e., a
 sequence of actions) that takes the agent from the initial state to all
 of the goals with optimal cost.
 
 This task is done in the solve method, as parameterized
 by a maze pathfinding problem, and is aided by the SearchTreeNode DS.
-'''
+"""
 
 from MazeProblem import MazeProblem
 from SearchTreeNode import SearchTreeNode
