@@ -14,21 +14,24 @@ from queue import PriorityQueue
 
 
 # Same code from Classwork #1
+# Follows a nodes parents until reaching the initial node
+# Returns list of actions each node took
 def generate_path(node):
     solution = []
     solution.append(node.action)
 
-    parentNode = node.parent
+    parent_node = node.parent
 
-    while (parentNode.action != None):
-        solution.append(parentNode.action)
-        parentNode = parentNode.parent
+    while parent_node.action is not None:
+        solution.append(parent_node.action)
+        parent_node = parent_node.parent
 
     solution.reverse()
 
     return solution
 
 
+# Returns heuristic score for CLOSEST goal
 def h(state, goals):
     score = []
     for goal in goals:
@@ -56,13 +59,14 @@ def solve(problem, initial, goals):
         current = frontier.get_nowait()[2]
         graveyard.add(current.state)
 
-        # If it satisfies the goal, return its path/solution
+        # when a goal is reached, reset the graveyard and frontier, remove goal from goals
         if current.state in goals:
             graveyard.clear()
             graveyard.add(current.state)
             goals.remove(current.state)
             frontier = PriorityQueue(maxsize=0)
 
+        # If there are no more goals to search for, return the current node's path
         if not goals:
             return generate_path(current)
 
@@ -76,6 +80,7 @@ def solve(problem, initial, goals):
                 # Increase to ensure nodes are never compared by queue
                 tie_breaker += 1
 
+    # If this point is reached, there is no path
     return None
 
 
@@ -91,7 +96,6 @@ class PathfinderTests(unittest.TestCase):
         initial = (1, 3)
         goals = [(5, 3)]
         soln = solve(problem, initial, goals)
-        print(soln)
         (soln_cost, is_soln) = problem.soln_test(soln, initial, goals)
         self.assertTrue(is_soln)
         self.assertEqual(soln_cost, 8)
@@ -106,7 +110,6 @@ class PathfinderTests(unittest.TestCase):
         initial = (1, 3)
         goals = [(3, 3), (5, 3)]
         soln = solve(problem, initial, goals)
-        print(soln)
         (soln_cost, is_soln) = problem.soln_test(soln, initial, goals)
         self.assertTrue(is_soln)
         self.assertEqual(soln_cost, 12)
