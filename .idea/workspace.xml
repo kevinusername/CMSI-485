@@ -14,7 +14,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_maze4.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_maze4 Coverage Results" MODIFIED="1537842423677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_maze1.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_maze1 Coverage Results" MODIFIED="1537842346427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
-    <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests.coverage" NAME="Unittests for Pathfinder.PathfinderTests Coverage Results" MODIFIED="1537842788418" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
+    <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests.coverage" NAME="Unittests for Pathfinder.PathfinderTests Coverage Results" MODIFIED="1537843424928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_maze2.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_maze2 Coverage Results" MODIFIED="1537842356965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_maze3.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_maze3 Coverage Results" MODIFIED="1537842400792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_in_hw1.coverage" NAME="Unittests in hw1 Coverage Results" MODIFIED="1537757594576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
@@ -42,14 +42,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1847" />
-          <entry key="txt" value="177" />
+          <entry key="py" value="2118" />
+          <entry key="txt" value="191" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="177" />
-          <entry key="Python" value="1847" />
+          <entry key="PLAIN_TEXT" value="191" />
+          <entry key="Python" value="2118" />
         </counts>
       </usages-collector>
     </session>
@@ -69,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/Homework/hw1/Pathfinder.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+              <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -315,25 +315,17 @@
       <option name="project" value="LOCAL" />
       <updated>1537842440207</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Comments added">
+      <created>1537842830650</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1537842830650</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests_test_maze3 - 2018.09.24 at 19h 26m 40s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests.test_maze3" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests_test_maze4 - 2018.09.24 at 19h 26m 46s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests.test_maze4" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests_test_maze4 - 2018.09.24 at 19h 27m 03s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests.test_maze4" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.24 at 19h 27m 08s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.24 at 19h 30m 53s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.24 at 19h 31m 05s.xml">
       <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
     </history-entry>
@@ -347,6 +339,21 @@
       <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.24 at 19h 33m 08s.xml">
+      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.24 at 19h 34m 50s.xml">
+      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.24 at 19h 38m 08s.xml">
+      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.24 at 19h 38m 23s.xml">
+      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.24 at 19h 38m 35s.xml">
+      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.24 at 19h 42m 29s.xml">
       <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
     </history-entry>
   </component>
@@ -391,16 +398,10 @@
     <MESSAGE value="Graveyard actually functions now" />
     <MESSAGE value="adding support for multiple goals&#10;test 1 still working" />
     <MESSAGE value="All tests pass!" />
-    <option name="LAST_COMMIT_MESSAGE" value="All tests pass!" />
+    <MESSAGE value="Comments added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comments added" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Homework/hw1/SearchTreeNode.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Homework/hw1/MazeProblem.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-231">
@@ -408,10 +409,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Homework/hw1/SearchTreeNode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Homework/hw1/Pathfinder.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
-          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
         </state>
       </provider>
     </entry>

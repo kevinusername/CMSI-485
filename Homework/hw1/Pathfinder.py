@@ -17,8 +17,7 @@ from queue import PriorityQueue
 # Follows a nodes parents until reaching the initial node
 # Returns list of actions each node took
 def generate_path(node):
-    solution = []
-    solution.append(node.action)
+    solution = [node.action]
 
     parent_node = node.parent
 
@@ -31,7 +30,7 @@ def generate_path(node):
     return solution
 
 
-# Returns heuristic score for CLOSEST goal
+# Returns Manhattan Distance heuristic score for CLOSEST goal
 def h(state, goals):
     score = []
     for goal in goals:
@@ -40,8 +39,8 @@ def h(state, goals):
 
 
 def solve(problem, initial, goals):
-    frontier = PriorityQueue(maxsize=0)
-    graveyard = set()
+    frontier = PriorityQueue(maxsize=0)  # queue with no maxsize that pops node with lowest h(n) + g(n) value
+    graveyard = set()  # set of all visited states
 
     # Put initial state in queue
     # 3-tuple format for queue objects: (h(node)+g(node), arbitrary tie-break value, node)
@@ -61,10 +60,9 @@ def solve(problem, initial, goals):
 
         # when a goal is reached, reset the graveyard and frontier, remove goal from goals
         if current.state in goals:
-            graveyard.clear()
-            graveyard.add(current.state)
+            graveyard = {current.state}  # new graveyard with only current state
             goals.remove(current.state)
-            frontier = PriorityQueue(maxsize=0)
+            frontier = PriorityQueue(maxsize=0)  # New empty frontier
 
         # If there are no more goals to search for, return the current node's path
         if not goals:
@@ -77,7 +75,7 @@ def solve(problem, initial, goals):
                                           h(neighbor[2], goals))
 
                 frontier.put_nowait((new_node.totalCost + new_node.heuristicCost, tie_breaker, new_node))
-                # Increase to ensure nodes are never compared by queue
+                # Increase to ensure nodes objects are never compared by queue
                 tie_breaker += 1
 
     # If this point is reached, there is no path
