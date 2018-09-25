@@ -29,18 +29,22 @@ def generate_path(node):
     return solution
 
 
-def h(state, goal):
-    return abs(goal[1] - state[1]) + abs(goal[0] - state[0])
+def h(state, goals):
+    score = []
+    for goal in goals:
+        score.append(abs(goal[1] - state[1]) + abs(goal[0] - state[0]))
+    return min(score)
 
 
 def solve(problem, initial, goals):
     frontier = PriorityQueue(maxsize=0)
     graveyard = set()
+    reached_goals = []
 
     # Put initial state in queue
     # 3-tuple format for queue objects: (h(node)+g(node), arbitrary tie-break value, node)
     frontier.put_nowait(
-        (0, 0, SearchTreeNode(initial, None, None, 0, h(initial, goals[0]))))
+        (0, 0, SearchTreeNode(initial, None, None, 0, h(initial, goals))))
 
     # An int to handle when multiple nodes score the same h(n) + g(n) value
     # Due to the way Python handles PriorityQueues, this is necessary to avoid
@@ -54,14 +58,16 @@ def solve(problem, initial, goals):
         graveyard.add(current.state)
 
         # If it satisfies the goal, return its path/solution
-        if current.state == goals[0]:
+        if current.state in goals:
+            reached_goals.append(current.state)
+        if reached_goals == goals:
             return generate_path(current)
 
         # Add adjacent nodes that have not already been visited to queue
         for neighbor in problem.transitions(current.state):
             if neighbor[2] not in graveyard:
                 new_node = SearchTreeNode(neighbor[2], neighbor[0], current, current.totalCost + neighbor[1],
-                                          h(neighbor[2], goals[0]))
+                                          h(neighbor[2], goals))
 
                 frontier.put_nowait((new_node.totalCost + new_node.heuristicCost, tie_breaker, new_node))
                 # Increase to ensure nodes are never compared by queue
@@ -98,6 +104,7 @@ class PathfinderTests(unittest.TestCase):
         initial = (1, 3)
         goals = [(3, 3), (5, 3)]
         soln = solve(problem, initial, goals)
+        print(soln)
         (soln_cost, is_soln) = problem.soln_test(soln, initial, goals)
         self.assertTrue(is_soln)
         self.assertEqual(soln_cost, 12)
