@@ -39,7 +39,6 @@ def h(state, goals):
 def solve(problem, initial, goals):
     frontier = PriorityQueue(maxsize=0)
     graveyard = set()
-    reached_goals = []
 
     # Put initial state in queue
     # 3-tuple format for queue objects: (h(node)+g(node), arbitrary tie-break value, node)
@@ -59,8 +58,12 @@ def solve(problem, initial, goals):
 
         # If it satisfies the goal, return its path/solution
         if current.state in goals:
-            reached_goals.append(current.state)
-        if reached_goals == goals:
+            graveyard.clear()
+            graveyard.add(current.state)
+            goals.remove(current.state)
+            frontier = PriorityQueue(maxsize=0)
+
+        if not goals:
             return generate_path(current)
 
         # Add adjacent nodes that have not already been visited to queue
@@ -73,8 +76,7 @@ def solve(problem, initial, goals):
                 # Increase to ensure nodes are never compared by queue
                 tie_breaker += 1
 
-    # Temp solution of exiting upon no path found
-    exit("no path found")
+    return None
 
 
 class PathfinderTests(unittest.TestCase):
