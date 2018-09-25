@@ -12,7 +12,7 @@ from SearchTreeNode import SearchTreeNode
 import unittest
 from queue import PriorityQueue
 
-
+# Same code from Classwork #1
 def generate_path(node):
     solution = []
     solution.append(node.action)
@@ -37,22 +37,33 @@ def solve(problem, initial, goals):
     graveyard = set()
 
     # Put initial state in queue
+    # 3-tuple format for queue objects: (h(node)+g(node), arbitrary tie-break value, node)
     frontier.put_nowait(
-        (0, SearchTreeNode(initial, None, None, 0, h(initial, goals[0]))))
+        (0, 0, SearchTreeNode(initial, None, None, 0, h(initial, goals[0]))))
+
+    # An int to handle when multiple nodes score the same h(n) + g(n) value
+    # Due to the way Python handles PriorityQueues, this is necessary to avoid
+    # attempting to compare nodes, which results in an error that terminates program
+    tie_breaker = 1
 
     while not frontier.empty():
-        current = frontier.get_nowait()[1]
 
+        # node with lowest h(n) + g(n) score
+        current = frontier.get_nowait()[2]
+
+        # If it satisfies the goal, return its path/solution
         if current.state == goals[0]:
             return generate_path(current)
 
+        # Add adjacent nodes that have not already been visited to queue
         for neighbor in problem.transitions(current.state):
-            new_node = SearchTreeNode(neighbor[2], neighbor[0], current, current.totalCost + neighbor[1],
-                                      h(neighbor[2], goals[0]))
-
             if neighbor[2] not in graveyard:
-                frontier.put_nowait(
-                    ((new_node.totalCost + new_node.heuristicCost), new_node))
+                new_node = SearchTreeNode(neighbor[2], neighbor[0], current, current.totalCost + neighbor[1],
+                                          h(neighbor[2], goals[0]))
+
+                frontier.put_nowait((new_node.totalCost + new_node.heuristicCost, tie_breaker, new_node))
+                # Increase to ensure nodes are never compared by queue
+                tie_breaker += 1
 
 
 class PathfinderTests(unittest.TestCase):
@@ -67,6 +78,7 @@ class PathfinderTests(unittest.TestCase):
         initial = (1, 3)
         goals = [(5, 3)]
         soln = solve(problem, initial, goals)
+        print(soln)
         (soln_cost, is_soln) = problem.soln_test(soln, initial, goals)
         self.assertTrue(is_soln)
         self.assertEqual(soln_cost, 8)
