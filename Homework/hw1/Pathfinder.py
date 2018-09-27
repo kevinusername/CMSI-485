@@ -14,7 +14,7 @@ from queue import PriorityQueue
 
 
 # Same code from Classwork #1
-# Follows a nodes parents until reaching the initial node
+# Follows a nodes parents until reaching the initial node change made
 # Returns list of actions each node took
 def generate_path(node):
     solution = [node.action]
