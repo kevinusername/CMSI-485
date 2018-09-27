@@ -1,11 +1,11 @@
-"""
+'''
 The Pathfinder class is responsible for finding a solution (i.e., a
 sequence of actions) that takes the agent from the initial state to all
 of the goals with optimal cost.
 
 This task is done in the solve method, as parameterized
 by a maze pathfinding problem, and is aided by the SearchTreeNode DS.
-"""
+'''
 
 from MazeProblem import MazeProblem
 from SearchTreeNode import SearchTreeNode
@@ -14,38 +14,62 @@ from queue import PriorityQueue
 
 
 # Same code from Classwork #1
-# Follows a nodes parents until reaching the initial node
-# Returns list of actions each node took
 def generate_path(node):
-    solution = [node.action]
+    solution = []
+    solution.append(node.action)
 
-    parent_node = node.parent
+    parentNode = node.parent
 
-    while parent_node.action is not None:
-        solution.append(parent_node.action)
-        parent_node = parent_node.parent
+    while (parentNode.action != None):
+        solution.append(parentNode.action)
+        parentNode = parentNode.parent
 
     solution.reverse()
 
     return solution
 
 
-# Returns Manhattan Distance heuristic score for CLOSEST goal
-def h(state, goals):
-    score = []
-    for goal in goals:
-        score.append(abs(goal[1] - state[1]) + abs(goal[0] - state[0]))
-    return min(score)
+def h(state, goal):
+    return abs(goal[1] - state[1]) + abs(goal[0] - state[0])
+
+
+def A_Star(problem, initial, goal):
+    frontier = PriorityQueue(maxsize=0)
+    graveyard = set()
+
+    # Put initial state in queue
+    # 3-tuple format for queue objects: (h(node)+g(node), arbitrary tie-break value, node)
+    frontier.put_nowait(SearchTreeNode(initial, None, None, 0, h(initial, goal)))
+
+    while not frontier.empty():
+
+        # node with lowest h(n) + g(n) score
+        current = frontier.get_nowait()
+        graveyard.add(current)
+
+        # If it satisfies the goal, return its path/solution
+        if current.state == goal:
+            return (current.totalCost, generate_path(current))
+
+        # Add adjacent nodes that have not already been visited to queue
+        for neighbor in problem.transitions(current.state):
+            if neighbor[2] not in graveyard:
+                new_node = SearchTreeNode(neighbor[2], neighbor[0], current, current.totalCost + neighbor[1],
+                                          h(neighbor[2], goal))
+
+                frontier.put_nowait(new_node)
+
+    return None
 
 
 def solve(problem, initial, goals):
-    frontier = PriorityQueue(maxsize=0)  # queue with no maxsize that pops node with lowest h(n) + g(n) value
-    graveyard = set()  # set of all visited states
+    frontier = PriorityQueue(maxsize=0)
+    graveyard = set()
 
     # Put initial state in queue
     # 3-tuple format for queue objects: (h(node)+g(node), arbitrary tie-break value, node)
     frontier.put_nowait(
-        (0, 0, SearchTreeNode(initial, None, None, 0, h(initial, goals))))
+        (0, 0, SearchTreeNode(initial, None, None, 0, h(initial, goals[0]))))
 
     # An int to handle when multiple nodes score the same h(n) + g(n) value
     # Due to the way Python handles PriorityQueues, this is necessary to avoid
@@ -56,30 +80,20 @@ def solve(problem, initial, goals):
 
         # node with lowest h(n) + g(n) score
         current = frontier.get_nowait()[2]
-        graveyard.add(current.state)
 
-        # when a goal is reached, reset the graveyard and frontier, remove goal from goals
-        if current.state in goals:
-            graveyard = {current.state}  # new graveyard with only current state
-            goals.remove(current.state)
-            frontier = PriorityQueue(maxsize=0)  # New empty frontier
-
-        # If there are no more goals to search for, return the current node's path
-        if not goals:
+        # If it satisfies the goal, return its path/solution
+        if current.state == goals[0]:
             return generate_path(current)
 
         # Add adjacent nodes that have not already been visited to queue
         for neighbor in problem.transitions(current.state):
             if neighbor[2] not in graveyard:
                 new_node = SearchTreeNode(neighbor[2], neighbor[0], current, current.totalCost + neighbor[1],
-                                          h(neighbor[2], goals))
+                                          h(neighbor[2], goals[0]))
 
                 frontier.put_nowait((new_node.totalCost + new_node.heuristicCost, tie_breaker, new_node))
-                # Increase to ensure nodes objects are never compared by queue
+                # Increase to ensure nodes are never compared by queue
                 tie_breaker += 1
-
-    # If this point is reached, there is no path
-    return None
 
 
 class PathfinderTests(unittest.TestCase):
@@ -94,6 +108,7 @@ class PathfinderTests(unittest.TestCase):
         initial = (1, 3)
         goals = [(5, 3)]
         soln = solve(problem, initial, goals)
+        print(soln)
         (soln_cost, is_soln) = problem.soln_test(soln, initial, goals)
         self.assertTrue(is_soln)
         self.assertEqual(soln_cost, 8)

@@ -33,3 +33,6 @@ class SearchTreeNode:
         self.parent = parent
         self.totalCost = totalCost
         self.heuristicCost = heuristicCost
+
+    def __lt__(self, other):
+        return (self.totalCost + self.heuristicCost) < (other.totalCost + other.heuristicCost)
