@@ -11,9 +11,11 @@ from MazeProblem import MazeProblem
 from SearchTreeNode import SearchTreeNode
 import unittest
 from queue import PriorityQueue
-
+from numpy import matrix
 
 # Same code from Classwork #1
+
+
 def generate_path(node):
     solution = []
     solution.append(node.action)
@@ -38,8 +40,8 @@ def A_Star(problem, initial, goal):
     graveyard = set()
 
     # Put initial state in queue
-    # 3-tuple format for queue objects: (h(node)+g(node), arbitrary tie-break value, node)
-    frontier.put_nowait(SearchTreeNode(initial, None, None, 0, h(initial, goal)))
+    frontier.put_nowait(SearchTreeNode(
+        initial, None, None, 0, h(initial, goal)))
 
     while not frontier.empty():
 
@@ -63,7 +65,12 @@ def A_Star(problem, initial, goal):
 
 
 def solve(problem, initial, goals):
-    
+    key_states = [initial] + goals
+    print(key_states)
+
+   
+
+    return
 
 
 class PathfinderTests(unittest.TestCase):
@@ -77,6 +84,8 @@ class PathfinderTests(unittest.TestCase):
         problem = MazeProblem(maze)
         initial = (1, 3)
         goals = [(5, 3)]
+        solve(problem, initial, goals)
+
         soln = solve(problem, initial, goals)
         print(soln)
         (soln_cost, is_soln) = problem.soln_test(soln, initial, goals)
