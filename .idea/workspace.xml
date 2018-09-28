@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2ae04c9a-eaf4-4145-b42d-3ce09f476c9e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/hw1/Pathfinder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/hw1/Pathfinder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework/hw1/SearchTreeNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/hw1/SearchTreeNode.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +55,7 @@
     <session id="22035682">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -64,10 +63,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="py" value="103" />
+          <entry key="txt" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="PLAIN_TEXT" value="24" />
           <entry key="Python" value="103" />
         </counts>
       </usages-collector>
@@ -344,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537842830650</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="new A* sub method">
+      <created>1538092630111</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1538092630111</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -421,7 +429,8 @@
     <MESSAGE value="adding support for multiple goals&#10;test 1 still working" />
     <MESSAGE value="All tests pass!" />
     <MESSAGE value="Comments added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comments added" />
+    <MESSAGE value="new A* sub method" />
+    <option name="LAST_COMMIT_MESSAGE" value="new A* sub method" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Homework/hw1/MazeProblem.py">
