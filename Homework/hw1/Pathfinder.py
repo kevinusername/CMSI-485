@@ -105,7 +105,7 @@ def solve(problem, initial, goals):
     :return: optimal path
     """
     key_states = [initial] + goals
-    length = len(key_states)
+    length = len(key_states)  # Don't need to compute a bunch
 
     cost_matrix = numpy.zeros((length, length), object)  # Stores A* cost and path for any 2 points
 
@@ -122,7 +122,7 @@ def solve(problem, initial, goals):
     # All possible orders of goals, always starting at initial
     all_permutations = [perm for perm in permutations(key_states) if perm[0] == key_states[0]]
 
-    index_dictionary = {}  # Dictionary so that the cost_matrix can be called upon using a goal
+    index_dictionary = {}  # Dictionary so that the cost_matrix can be called upon using a goal as index
     for state in key_states:
         index_dictionary[state] = key_states.index(state)
 
@@ -161,7 +161,6 @@ class PathfinderTests(unittest.TestCase):
         solve(problem, initial, goals)
 
         soln = solve(problem, initial, goals)
-        print(soln)
         (soln_cost, is_soln) = problem.soln_test(soln, initial, goals)
         self.assertTrue(is_soln)
         self.assertEqual(soln_cost, 8)
@@ -207,6 +206,7 @@ class PathfinderTests(unittest.TestCase):
         self.assertTrue(soln == None)
 
     def test_maze5(self):
+        # Big boi test. Confirms that empirically, scales exactly as O(n!) should
         maze = ["XXXXXXXXXXXXXXXXXX",
                 "X****************X",
                 "X****************X",
@@ -218,10 +218,10 @@ class PathfinderTests(unittest.TestCase):
                 "XXXXXXXXXXXXXXXXXX"]
         problem = MazeProblem(maze)
         initial = (3, 1)
-        goals = [(1, 5), (2, 5), (5, 4), (1, 7), (5, 5), (1, 6), (2, 2), (6, 2)]
+        goals = [(1, 5), (2, 5), (5, 4), (1, 7), (5, 5), (1, 6), (2, 2), (6, 2), (5, 1), (3, 3), (1, 1)]
         soln = solve(problem, initial, goals)
-        print(soln)
         (soln_cost, is_soln) = problem.soln_test(soln, initial, goals)
+        print(soln)
         self.assertTrue(is_soln)
 
 
