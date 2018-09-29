@@ -11,7 +11,9 @@ from MazeProblem import MazeProblem
 from SearchTreeNode import SearchTreeNode
 import unittest
 from queue import PriorityQueue
-from numpy import matrix
+import numpy
+from itertools import permutations
+
 
 # Same code from Classwork #1
 
@@ -64,11 +66,61 @@ def A_Star(problem, initial, goal):
     return None
 
 
+def reverse_path(path):
+    reverse_dictionary = {"D": "U", "U": "D", "L": "R", "R": "L"}
+    new_path = []
+
+    for step in path:
+        new_path.append(reverse_dictionary[step])
+
+    new_path.reverse()
+
+    return new_path
+
+
 def solve(problem, initial, goals):
     key_states = [initial] + goals
-    print(key_states)
+    length = len(key_states)
 
-   
+    cost_matrix = numpy.zeros((length, length), object)
+
+    for y in range(length - 1):
+        for x in range(y + 1, length):
+            if x != y:
+                cost_matrix[x][y] = A_Star(problem, key_states[x], key_states[y])
+                if cost_matrix[x][y] is None:
+                    return None
+                cost_matrix[y][x] = (cost_matrix[x][y][0], reverse_path(cost_matrix[x][y][1]))
+
+    # print(cost_matrix)
+    # exit()
+
+    all_permutations = [perm for perm in permutations(key_states) if perm[0] == key_states[0]]
+
+    index_dictionary = {}
+    for state in key_states:
+        index_dictionary[state] = key_states.index(state)
+    # print(index_dictionary[(5, 3)])
+    # exit()
+
+    all_costs = []
+    counter = 0
+    for perm in all_permutations:
+        total_cost = 0
+        for s in range(length - 1):
+            total_cost += cost_matrix[index_dictionary[perm[s]]][index_dictionary[perm[s + 1]]][0]
+        all_costs.append(total_cost)
+        counter += 1
+
+    optimal_perm = all_permutations[all_costs.index(min(all_costs))]
+    print(optimal_perm)
+    final_path = []
+
+    for s in range(length - 1):
+        final_path += cost_matrix[index_dictionary[optimal_perm[s]]][index_dictionary[optimal_perm[s + 1]]][1]
+
+    return final_path
+
 
     return
 
