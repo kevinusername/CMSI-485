@@ -1,3 +1,4 @@
+# Kevin Peters
 """
 SearchTreeNodes contain the following information for BFS:
 

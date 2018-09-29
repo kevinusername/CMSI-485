@@ -1,3 +1,4 @@
+# Kevin Peters
 """
 Homework 1 MazeProblem Formalization:
 MazeProblems represent 2D pathfinding problems, as programmatically

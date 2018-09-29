@@ -14,7 +14,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_maze4.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_maze4 Coverage Results" MODIFIED="1538184642962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_maze1.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_maze1 Coverage Results" MODIFIED="1538184086603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
-    <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests.coverage" NAME="Unittests for Pathfinder.PathfinderTests Coverage Results" MODIFIED="1538188622310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
+    <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests.coverage" NAME="Unittests for Pathfinder.PathfinderTests Coverage Results" MODIFIED="1538188800674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_maze2.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_maze2 Coverage Results" MODIFIED="1538184153195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_reverse.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_reverse Coverage Results" MODIFIED="1538181199185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$alt_tests.coverage" NAME="alt tests Coverage Results" MODIFIED="1538183911907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
@@ -26,7 +26,7 @@
     <session id="1028920114">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.5" value="1" />
@@ -50,12 +50,12 @@
         <counts>
           <entry key="dummy" value="2" />
           <entry key="py" value="5776" />
-          <entry key="txt" value="395" />
+          <entry key="txt" value="432" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="277" />
+          <entry key="PLAIN_TEXT" value="314" />
           <entry key="Python" value="5776" />
           <entry key="Scratch" value="120" />
         </counts>
@@ -97,12 +97,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Homework/hw1/Pathfinder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="55" lean-forward="true" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+            <state relative-caret-position="714">
+              <caret line="224" column="32" lean-forward="true" selection-start-line="224" selection-start-column="32" selection-end-line="224" selection-end-column="32" />
               <folding>
                 <element signature="e#308#343#0" expanded="true" />
-                <marker date="1538188710695" expanded="true" signature="2358:2717" ph="..." />
-                <marker date="1538188710695" expanded="true" signature="5021:5027" ph="..." />
+                <marker date="1538188799383" expanded="true" signature="2358:2717" ph="..." />
+                <marker date="1538188799383" expanded="true" signature="5021:5027" ph="..." />
               </folding>
             </state>
           </provider>
@@ -415,16 +415,17 @@
       <option name="project" value="LOCAL" />
       <updated>1538187947886</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Final comments and cleanup">
+      <created>1538188731505</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1538188731505</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 09m 33s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 09m 53s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 10m 09s.xml">
       <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
     </history-entry>
@@ -449,10 +450,15 @@
     <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 37m 17s.xml">
       <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 39m 53s.xml">
+      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 40m 15s.xml">
+      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15734266" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -497,7 +503,8 @@
     <MESSAGE value="Basically finished" />
     <MESSAGE value="Syntax cleanup" />
     <MESSAGE value="Added many comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added many comments" />
+    <MESSAGE value="Final comments and cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final comments and cleanup" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Homework/hw1/numpytests.py">
@@ -540,12 +547,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Homework/hw1/Pathfinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="55" lean-forward="true" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+        <state relative-caret-position="714">
+          <caret line="224" column="32" lean-forward="true" selection-start-line="224" selection-start-column="32" selection-end-line="224" selection-end-column="32" />
           <folding>
             <element signature="e#308#343#0" expanded="true" />
-            <marker date="1538188710695" expanded="true" signature="2358:2717" ph="..." />
-            <marker date="1538188710695" expanded="true" signature="5021:5027" ph="..." />
+            <marker date="1538188799383" expanded="true" signature="2358:2717" ph="..." />
+            <marker date="1538188799383" expanded="true" signature="5021:5027" ph="..." />
           </folding>
         </state>
       </provider>

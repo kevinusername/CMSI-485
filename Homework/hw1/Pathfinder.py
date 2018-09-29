@@ -1,3 +1,4 @@
+# Kevin Peters
 """
 The Pathfinder class is responsible for finding a solution (i.e., a
 sequence of actions) that takes the agent from the initial state to all
@@ -218,7 +219,7 @@ class PathfinderTests(unittest.TestCase):
                 "XXXXXXXXXXXXXXXXXX"]
         problem = MazeProblem(maze)
         initial = (3, 1)
-        goals = [(1, 5), (2, 5), (5, 4), (1, 7), (5, 5), (1, 6), (2, 2), (6, 2), (5, 1), (3, 3), (1, 1)]
+        goals = [(1, 5), (2, 5), (5, 4), (1, 7), (5, 5), (1, 6), (2, 2), (6, 2), (5, 1), (3, 3)]
         soln = solve(problem, initial, goals)
         (soln_cost, is_soln) = problem.soln_test(soln, initial, goals)
         print(soln)
