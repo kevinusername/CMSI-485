@@ -128,7 +128,6 @@ def solve(problem, initial, goals):
         index_dictionary[state] = key_states.index(state)
 
     all_costs = []  # A list meant to parallel the all_permutations list, holding each perms respective cost
-    counter = 0  # To keep track of index for all_costs
 
     # Generate the cost for each permutation and store it in all_costs
     for perm in all_permutations:
@@ -136,7 +135,6 @@ def solve(problem, initial, goals):
         for s in range(length - 1):
             total_cost += cost_matrix[index_dictionary[perm[s]]][index_dictionary[perm[s + 1]]][0]
         all_costs.append(total_cost)
-        counter += 1
 
     optimal_perm = all_permutations[all_costs.index(min(all_costs))]  # A permutation with the lowest cost
     final_path = []
