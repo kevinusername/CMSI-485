@@ -86,4 +86,4 @@ class MazeProblem:
                 targets -= 1
             if self.maze[s[1]][s[0]] == "X":
                 return (-1, False)
-        return (tc, targets == 0)
+        return (tc, targets <= 0)

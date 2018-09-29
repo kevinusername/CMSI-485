@@ -121,7 +121,6 @@ def solve(problem, initial, goals):
 
     return final_path
 
-
     return
 
 
@@ -183,6 +182,25 @@ class PathfinderTests(unittest.TestCase):
         goals = [(5, 3), (1, 3), (1, 1)]
         soln = solve(problem, initial, goals)
         self.assertTrue(soln == None)
+
+    def test_maze5(self):
+        maze = ["XXXXXXXXXXXXXXXXXX",
+                "X****************X",
+                "X****************X",
+                "X****************X",
+                "X****************X",
+                "X****************X",
+                "X****************X",
+                "X****************X",
+                "XXXXXXXXXXXXXXXXXX"]
+        problem = MazeProblem(maze)
+        initial = (3, 1)
+        goals = [(1, 5), (2, 5), (5, 4), (1, 7), (5, 5), (1, 6), (2, 2), (6, 2), (3, 5), (2, 6)]
+        soln = solve(problem, initial, goals)
+        print(soln)
+        (soln_cost, is_soln) = problem.soln_test(soln, initial, goals)
+        self.assertTrue(is_soln)
+        # self.assertEqual(soln_cost, 6)
 
 
 if __name__ == '__main__':
