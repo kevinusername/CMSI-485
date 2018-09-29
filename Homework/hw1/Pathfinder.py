@@ -1,11 +1,11 @@
-'''
+"""
 The Pathfinder class is responsible for finding a solution (i.e., a
 sequence of actions) that takes the agent from the initial state to all
 of the goals with optimal cost.
 
 This task is done in the solve method, as parameterized
 by a maze pathfinding problem, and is aided by the SearchTreeNode DS.
-'''
+"""
 
 from MazeProblem import MazeProblem
 from SearchTreeNode import SearchTreeNode
@@ -16,17 +16,15 @@ from itertools import permutations
 
 
 # Same code from Classwork #1
-
-
+# Follows a node's parent tree to generate the path it took
 def generate_path(node):
-    solution = []
-    solution.append(node.action)
+    solution = [node.action]
 
-    parentNode = node.parent
+    parent_node = node.parent
 
-    while (parentNode.action != None):
-        solution.append(parentNode.action)
-        parentNode = parentNode.parent
+    while parent_node.action is not None:
+        solution.append(parent_node.action)
+        parent_node = parent_node.parent
 
     solution.reverse()
 
@@ -37,7 +35,7 @@ def h(state, goal):
     return abs(goal[1] - state[1]) + abs(goal[0] - state[0])
 
 
-def A_Star(problem, initial, goal):
+def a_star(problem, initial, goal):
     frontier = PriorityQueue(maxsize=0)
     graveyard = set()
 
@@ -53,7 +51,7 @@ def A_Star(problem, initial, goal):
 
         # If it satisfies the goal, return its path/solution
         if current.state == goal:
-            return (current.totalCost, generate_path(current))
+            return current.totalCost, generate_path(current)
 
         # Add adjacent nodes that have not already been visited to queue
         for neighbor in problem.transitions(current.state):
@@ -87,21 +85,16 @@ def solve(problem, initial, goals):
     for y in range(length - 1):
         for x in range(y + 1, length):
             if x != y:
-                cost_matrix[x][y] = A_Star(problem, key_states[x], key_states[y])
+                cost_matrix[x][y] = a_star(problem, key_states[x], key_states[y])
                 if cost_matrix[x][y] is None:
                     return None
                 cost_matrix[y][x] = (cost_matrix[x][y][0], reverse_path(cost_matrix[x][y][1]))
-
-    # print(cost_matrix)
-    # exit()
 
     all_permutations = [perm for perm in permutations(key_states) if perm[0] == key_states[0]]
 
     index_dictionary = {}
     for state in key_states:
         index_dictionary[state] = key_states.index(state)
-    # print(index_dictionary[(5, 3)])
-    # exit()
 
     all_costs = []
     counter = 0
@@ -120,8 +113,6 @@ def solve(problem, initial, goals):
         final_path += cost_matrix[index_dictionary[optimal_perm[s]]][index_dictionary[optimal_perm[s + 1]]][1]
 
     return final_path
-
-    return
 
 
 class PathfinderTests(unittest.TestCase):
@@ -195,12 +186,11 @@ class PathfinderTests(unittest.TestCase):
                 "XXXXXXXXXXXXXXXXXX"]
         problem = MazeProblem(maze)
         initial = (3, 1)
-        goals = [(1, 5), (2, 5), (5, 4), (1, 7), (5, 5), (1, 6), (2, 2), (6, 2), (3, 5), (2, 6)]
+        goals = [(1, 5), (2, 5), (5, 4), (1, 7), (5, 5), (1, 6), (2, 2), (6, 2)]
         soln = solve(problem, initial, goals)
         print(soln)
         (soln_cost, is_soln) = problem.soln_test(soln, initial, goals)
         self.assertTrue(is_soln)
-        # self.assertEqual(soln_cost, 6)
 
 
 if __name__ == '__main__':
