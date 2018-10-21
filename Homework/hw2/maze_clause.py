@@ -21,6 +21,14 @@ class MazeClause:
         self.valid = False
         # TODO: Process list of propositions to make a correctly
         # formatted MazeClause
+        for p in props:
+            # Case: vacuous clause
+            if p[0] in props and p[1] != self.get_prop(p[0]):
+                self.props = {}
+                self.valid = True
+                break
+            # Case: this prop does not lead to a vacuous clause
+            self.props[p[0]] = p[1]
 
     def get_prop(self, prop):
         """
@@ -29,9 +37,8 @@ class MazeClause:
           - True if the requested prop is positive in the clause
           - False if the requested prop is negated in the clause
         """
-        # TODO: This is currently implemented incorrectly; see
-        # spec for details!
-        return False
+
+        return self.props.get(prop)
 
     def is_valid(self):
         """
@@ -39,9 +46,7 @@ class MazeClause:
           - True if this clause is logically equivalent with True
           - False otherwise
         """
-        # TODO: This is currently implemented incorrectly; see
-        # spec for details!
-        return False
+        return self.valid
 
     def is_empty(self):
         """
@@ -50,9 +55,7 @@ class MazeClause:
           - False otherwise
         (NB: valid clauses are not empty)
         """
-        # TODO: This is currently implemented incorrectly; see
-        # spec for details!
-        return False
+        return len(self.props) == 0
 
     def __eq__(self, other):
         """
@@ -84,8 +87,15 @@ class MazeClause:
         inference engine)
         """
         results = set()
-        # TODO: This is currently implemented incorrectly; see
-        # spec for details!
+
+        # for p in c1.props:
+        #     if p[1] != c2.get_prop(p[0]) or not c2.get_prop(p[1]) == None:
+        #         del c2.props[p[0]]
+        #         del c1.props[p[0]]
+
+        # c3 = MazeClause({c1, c2})
+        # results.add(c3)
+
         return results
 
 
