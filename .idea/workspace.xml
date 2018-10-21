@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ae04c9a-eaf4-4145-b42d-3ce09f476c9e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Homework/hw1/Pathfinder.py" beforeDir="false" afterPath="$PROJECT_DIR$/Homework/hw1/Pathfinder.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -14,48 +15,56 @@
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_maze4.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_maze4 Coverage Results" MODIFIED="1538184642962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_maze1.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_maze1 Coverage Results" MODIFIED="1538184086603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests.coverage" NAME="Unittests for Pathfinder.PathfinderTests Coverage Results" MODIFIED="1538197604798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
+    <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_PathfinderTests_PathfinderTests_test_maze10.coverage" NAME="Unittests for PathfinderTests.PathfinderTests.test_maze10 Coverage Results" MODIFIED="1538366894230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
+    <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_PathfinderTests_PathfinderTests_test_maze7.coverage" NAME="Unittests for PathfinderTests.PathfinderTests.test_maze7 Coverage Results" MODIFIED="1538367041637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
+    <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_PathfinderTests_PathfinderTests_test_maze5.coverage" NAME="Unittests for PathfinderTests.PathfinderTests.test_maze5 Coverage Results" MODIFIED="1538367037607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
+    <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_maze5.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_maze5 Coverage Results" MODIFIED="1538186742468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
+    <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_PathfinderTests_PathfinderTests_test_maze8.coverage" NAME="Unittests for PathfinderTests.PathfinderTests.test_maze8 Coverage Results" MODIFIED="1538367105331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
+    <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_PathfinderTests_PathfinderTests_test_maze9.coverage" NAME="Unittests for PathfinderTests.PathfinderTests.test_maze9 Coverage Results" MODIFIED="1538367116658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
+    <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_PathfinderTests_PathfinderTests_test_maze6.coverage" NAME="Unittests for PathfinderTests.PathfinderTests.test_maze6 Coverage Results" MODIFIED="1538367529238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_maze2.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_maze2 Coverage Results" MODIFIED="1538184153195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_reverse.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_reverse Coverage Results" MODIFIED="1538181199185" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$alt_tests.coverage" NAME="alt tests Coverage Results" MODIFIED="1538183911907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_maze3.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_maze3 Coverage Results" MODIFIED="1538186732876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
     <SUITE FILE_PATH="coverage/CMSI_485$Unittests_in_hw1.coverage" NAME="Unittests in hw1 Coverage Results" MODIFIED="1537757594576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
-    <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_Pathfinder_PathfinderTests_test_maze5.coverage" NAME="Unittests for Pathfinder.PathfinderTests.test_maze5 Coverage Results" MODIFIED="1538186742468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
+    <SUITE FILE_PATH="coverage/CMSI_485$Unittests_for_PathfinderTests_PathfinderTests.coverage" NAME="Unittests for PathfinderTests.PathfinderTests Coverage Results" MODIFIED="1538367718104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Homework/hw1" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="1028920114">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.3" value="4" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.3" value="5" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="5" />
+          <entry key="py" value="6" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="5" />
+          <entry key="Python" value="6" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="2" />
-          <entry key="py" value="5776" />
-          <entry key="txt" value="432" />
+          <entry key="py" value="5837" />
+          <entry key="txt" value="457" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="314" />
-          <entry key="Python" value="5776" />
+          <entry key="PLAIN_TEXT" value="339" />
+          <entry key="Python" value="5837" />
           <entry key="Scratch" value="120" />
         </counts>
       </usages-collector>
@@ -87,7 +96,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homework/hw1/MazeProblem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1848">
+            <state relative-caret-position="2047">
               <caret line="89" column="33" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
             </state>
           </provider>
@@ -96,12 +105,23 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Homework/hw1/Pathfinder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="134" column="35" lean-forward="true" selection-start-line="134" selection-start-column="35" selection-end-line="134" selection-end-column="35" />
+            <state relative-caret-position="1012">
+              <caret line="49" selection-start-line="49" selection-end-line="50" selection-end-column="32" />
               <folding>
-                <element signature="e#308#343#0" expanded="true" />
-                <marker date="1538197601891" expanded="true" signature="2373:2732" ph="..." />
-                <marker date="1538197601891" expanded="true" signature="4959:4965" ph="..." />
+                <marker date="1538367513688" expanded="true" signature="2379:2738" ph="..." />
+                <marker date="1538367513688" expanded="true" signature="4965:4971" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Homework/hw1/PathfinderTests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,7 +130,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="299">
               <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="49" />
             </state>
           </provider>
@@ -119,7 +139,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homework/hw1/SearchTreeNode.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
+            <state relative-caret-position="667">
               <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
@@ -146,6 +166,7 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
         <option value="$PROJECT_DIR$/Homework/hw1/MazeProblem.py" />
         <option value="$PROJECT_DIR$/Homework/hw1/Pathfinder.py" />
+        <option value="$PROJECT_DIR$/Homework/hw1/PathfinderTests.py" />
       </list>
     </option>
   </component>
@@ -158,8 +179,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="735" />
     <option name="y" value="-15" />
-    <option name="width" value="1753" />
-    <option name="height" value="1253" />
+    <option name="width" value="1755" />
+    <option name="height" value="1255" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -206,6 +227,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -219,8 +241,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for Pathfinder.PathfinderTests">
-    <configuration name="Unittests for Pathfinder.PathfinderTests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests for PathfinderTests.PathfinderTests">
+    <configuration name="Unittests for PathfinderTests.PathfinderTests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="CMSI-485" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -231,11 +253,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Pathfinder.PathfinderTests&quot;" />
+      <option name="_new_target" value="&quot;PathfinderTests.PathfinderTests&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for Pathfinder.PathfinderTests.test_maze2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for PathfinderTests.PathfinderTests.test_maze6" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="CMSI-485" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -246,11 +268,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Pathfinder.PathfinderTests.test_maze2&quot;" />
+      <option name="_new_target" value="&quot;PathfinderTests.PathfinderTests.test_maze6&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for Pathfinder.PathfinderTests.test_maze3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for PathfinderTests.PathfinderTests.test_maze7" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="CMSI-485" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -261,11 +283,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Pathfinder.PathfinderTests.test_maze3&quot;" />
+      <option name="_new_target" value="&quot;PathfinderTests.PathfinderTests.test_maze7&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for Pathfinder.PathfinderTests.test_maze4" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for PathfinderTests.PathfinderTests.test_maze8" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="CMSI-485" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -276,11 +298,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Pathfinder.PathfinderTests.test_maze4&quot;" />
+      <option name="_new_target" value="&quot;PathfinderTests.PathfinderTests.test_maze8&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for Pathfinder.PathfinderTests.test_maze5" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for PathfinderTests.PathfinderTests.test_maze9" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="CMSI-485" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -291,24 +313,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Pathfinder.PathfinderTests.test_maze5&quot;" />
+      <option name="_new_target" value="&quot;PathfinderTests.PathfinderTests.test_maze9&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests for Pathfinder.PathfinderTests" />
-      <item itemvalue="Python tests.Unittests for Pathfinder.PathfinderTests.test_maze2" />
-      <item itemvalue="Python tests.Unittests for Pathfinder.PathfinderTests.test_maze5" />
-      <item itemvalue="Python tests.Unittests for Pathfinder.PathfinderTests.test_maze4" />
-      <item itemvalue="Python tests.Unittests for Pathfinder.PathfinderTests.test_maze3" />
+      <item itemvalue="Python tests.Unittests for PathfinderTests.PathfinderTests.test_maze7" />
+      <item itemvalue="Python tests.Unittests for PathfinderTests.PathfinderTests.test_maze8" />
+      <item itemvalue="Python tests.Unittests for PathfinderTests.PathfinderTests.test_maze9" />
+      <item itemvalue="Python tests.Unittests for PathfinderTests.PathfinderTests" />
+      <item itemvalue="Python tests.Unittests for PathfinderTests.PathfinderTests.test_maze6" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for Pathfinder.PathfinderTests" />
-        <item itemvalue="Python tests.Unittests for Pathfinder.PathfinderTests.test_maze5" />
-        <item itemvalue="Python tests.Unittests for Pathfinder.PathfinderTests.test_maze3" />
-        <item itemvalue="Python tests.Unittests for Pathfinder.PathfinderTests.test_maze4" />
-        <item itemvalue="Python tests.Unittests for Pathfinder.PathfinderTests.test_maze2" />
+        <item itemvalue="Python tests.Unittests for PathfinderTests.PathfinderTests" />
+        <item itemvalue="Python tests.Unittests for PathfinderTests.PathfinderTests.test_maze6" />
+        <item itemvalue="Python tests.Unittests for PathfinderTests.PathfinderTests.test_maze9" />
+        <item itemvalue="Python tests.Unittests for PathfinderTests.PathfinderTests.test_maze8" />
+        <item itemvalue="Python tests.Unittests for PathfinderTests.PathfinderTests.test_maze7" />
       </list>
     </recent_temporary>
   </component>
@@ -421,46 +443,52 @@
       <option name="project" value="LOCAL" />
       <updated>1538188731505</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Removed pointless counter">
+      <created>1538197629037</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1538197629038</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 10m 09s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    <history-entry file="Unittests_for_PathfinderTests_PathfinderTests_test_maze6 - 2018.09.30 at 21h 14m 57s.xml">
+      <configuration name="Unittests for PathfinderTests.PathfinderTests.test_maze6" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 30m 57s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    <history-entry file="Unittests_for_PathfinderTests_PathfinderTests_test_maze6 - 2018.09.30 at 21h 15m 08s.xml">
+      <configuration name="Unittests for PathfinderTests.PathfinderTests.test_maze6" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 31m 15s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    <history-entry file="Unittests_for_PathfinderTests_PathfinderTests_test_maze6 - 2018.09.30 at 21h 15m 21s.xml">
+      <configuration name="Unittests for PathfinderTests.PathfinderTests.test_maze6" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 31m 24s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    <history-entry file="Unittests_for_PathfinderTests_PathfinderTests_test_maze6 - 2018.09.30 at 21h 16m 25s.xml">
+      <configuration name="Unittests for PathfinderTests.PathfinderTests.test_maze6" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 32m 04s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    <history-entry file="Unittests_for_PathfinderTests_PathfinderTests_test_maze6 - 2018.09.30 at 21h 18m 35s.xml">
+      <configuration name="Unittests for PathfinderTests.PathfinderTests.test_maze6" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 35m 31s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    <history-entry file="Unittests_for_PathfinderTests_PathfinderTests_test_maze6 - 2018.09.30 at 21h 18m 39s.xml">
+      <configuration name="Unittests for PathfinderTests.PathfinderTests.test_maze6" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 35m 49s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    <history-entry file="Unittests_for_PathfinderTests_PathfinderTests_test_maze6 - 2018.09.30 at 21h 18m 49s.xml">
+      <configuration name="Unittests for PathfinderTests.PathfinderTests.test_maze6" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 37m 17s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    <history-entry file="Unittests_for_PathfinderTests_PathfinderTests - 2018.09.30 at 21h 19m 41s.xml">
+      <configuration name="Unittests for PathfinderTests.PathfinderTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 39m 53s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    <history-entry file="Unittests_for_PathfinderTests_PathfinderTests - 2018.09.30 at 21h 20m 22s.xml">
+      <configuration name="Unittests for PathfinderTests.PathfinderTests" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_Pathfinder_PathfinderTests - 2018.09.28 at 19h 40m 15s.xml">
-      <configuration name="Unittests for Pathfinder.PathfinderTests" configurationId="tests" />
+    <history-entry file="Unittests_for_PathfinderTests_PathfinderTests - 2018.09.30 at 21h 22m 14s.xml">
+      <configuration name="Unittests for PathfinderTests.PathfinderTests" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15884116" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16483517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -504,40 +532,50 @@
     <MESSAGE value="Syntax cleanup" />
     <MESSAGE value="Added many comments" />
     <MESSAGE value="Final comments and cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final comments and cleanup" />
+    <MESSAGE value="Removed pointless counter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed pointless counter" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Homework/hw1/numpytests.py" />
     <entry file="file://$PROJECT_DIR$/Homework/hw1/alt tests.py" />
     <entry file="file://$PROJECT_DIR$/Homework/hw1/MazeProblem.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1848">
+        <state relative-caret-position="2047">
           <caret line="89" column="33" selection-start-line="89" selection-start-column="33" selection-end-line="89" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Homework/hw1/PathfinderTests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="299">
           <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Homework/hw1/SearchTreeNode.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
+        <state relative-caret-position="667">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Homework/hw1/Pathfinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="134" column="35" lean-forward="true" selection-start-line="134" selection-start-column="35" selection-end-line="134" selection-end-column="35" />
+        <state relative-caret-position="1012">
+          <caret line="49" selection-start-line="49" selection-end-line="50" selection-end-column="32" />
           <folding>
-            <element signature="e#308#343#0" expanded="true" />
-            <marker date="1538197601891" expanded="true" signature="2373:2732" ph="..." />
-            <marker date="1538197601891" expanded="true" signature="4959:4965" ph="..." />
+            <marker date="1538367513688" expanded="true" signature="2379:2738" ph="..." />
+            <marker date="1538367513688" expanded="true" signature="4965:4971" ph="..." />
           </folding>
         </state>
       </provider>

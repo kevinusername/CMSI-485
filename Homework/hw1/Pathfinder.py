@@ -63,7 +63,7 @@ def a_star(problem, initial, goal):
     while not frontier.empty():
 
         current = frontier.get_nowait()  # node with lowest h(n) + g(n) score
-        graveyard.add(current)
+        graveyard.add(current.state)
 
         # If it satisfies the goal, return its path/solution
         if current.state == goal:
