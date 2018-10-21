@@ -96,6 +96,7 @@ class MazeClause:
                 none_removed = False
                 break
 
+        # Case: Nothing learned
         if none_removed:
             return results
 
@@ -106,8 +107,10 @@ class MazeClause:
 
         new_clause = MazeClause(c5)
 
+        # Case: Inferred new clause that is not valid
         if not new_clause.is_valid():
             results.add(new_clause)
+        # Else, assumed valid, thus inference failed
 
         return results
 
