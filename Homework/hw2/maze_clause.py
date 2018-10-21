@@ -88,15 +88,18 @@ class MazeClause:
         """
         results = set()
 
-        if c1 == c2:
-            return results
-
+        none_removed = True
         for p in c1.props.copy():
-            if c1.get_prop(p) != c2.get_prop(p) and c2.get_prop(p) is not None:
+            if p in c2.props and c1.get_prop(p) != c2.get_prop(p):
                 del c2.props[p]
                 del c1.props[p]
+                none_removed = False
                 break
 
+        if none_removed:
+            return results
+
+        # Dictionaries -> lists then combine lists
         c3 = [(p, v) for p, v in c1.props.items()]
         c4 = [(p, v) for p, v in c2.props.items()]
         c5 = c3 + c4
