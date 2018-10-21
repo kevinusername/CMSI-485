@@ -90,6 +90,7 @@ class MazeClause:
 
         none_removed = True
         for p in c1.props.copy():
+            # Case: a proposition is shared and disagreed upon by the clauses
             if p in c2.props and c1.get_prop(p) != c2.get_prop(p):
                 del c2.props[p]
                 del c1.props[p]
@@ -101,11 +102,11 @@ class MazeClause:
             return results
 
         # Dictionaries -> lists then combine lists
-        c3 = [(p, v) for p, v in c1.props.items()]
-        c4 = [(p, v) for p, v in c2.props.items()]
-        c5 = c3 + c4
+        c1_list = [(p, v) for p, v in c1.props.items()]
+        c2_list = [(p, v) for p, v in c2.props.items()]
+        combined_list = c1_list + c2_list
 
-        new_clause = MazeClause(c5)
+        new_clause = MazeClause(combined_list)
 
         # Case: Inferred new clause that is not valid
         if not new_clause.is_valid():
