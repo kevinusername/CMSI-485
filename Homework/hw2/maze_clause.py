@@ -23,7 +23,7 @@ class MazeClause:
         # formatted MazeClause
         for p in props:
             # Case: vacuous clause
-            if p[0] in props and p[1] != self.get_prop(p[0]):
+            if p[0] in self.props and p[1] != self.props.get(p[0]):
                 self.props = {}
                 self.valid = True
                 break
@@ -55,7 +55,7 @@ class MazeClause:
           - False otherwise
         (NB: valid clauses are not empty)
         """
-        return len(self.props) == 0
+        return not self.props and not self.is_valid()
 
     def __eq__(self, other):
         """
@@ -88,13 +88,23 @@ class MazeClause:
         """
         results = set()
 
-        # for p in c1.props:
-        #     if p[1] != c2.get_prop(p[0]) or not c2.get_prop(p[1]) == None:
-        #         del c2.props[p[0]]
-        #         del c1.props[p[0]]
+        if c1 == c2:
+            return results
 
-        # c3 = MazeClause({c1, c2})
-        # results.add(c3)
+        for p in c1.props.copy():
+            if c1.get_prop(p) != c2.get_prop(p) and c2.get_prop(p) is not None:
+                del c2.props[p]
+                del c1.props[p]
+                break
+
+        c3 = [(p, v) for p, v in c1.props.items()]
+        c4 = [(p, v) for p, v in c2.props.items()]
+        c5 = c3 + c4
+
+        new_clause = MazeClause(c5)
+
+        if not new_clause.is_valid():
+            results.add(new_clause)
 
         return results
 
