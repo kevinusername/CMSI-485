@@ -1,0 +1,1 @@
+1. numpy.genfromtxt(): how do we incorporate the column names? there is names=true, but then how are they linked?

@@ -1,0 +1,21 @@
+genfromtxt:
+    - use this to get both data and headers
+    - getting headers messes up formatting
+        - use data.view((int, # of columns)) to fix this
+    - can get list of col names from data.dtype.names
+
+from_structure:
+    - takes data and names from genfromtxt
+    - "structure" is a given weird formatted tuple (from Tetrad)
+    - Skip a bunch of optional params
+
+util_map:
+    - dictionary of dictionaries
+        - dict1 = {parents of util node: dict2,...}
+        - dict2 = {value of parent node: utility score,...}
+    - we have to assign utility to values of parents of utility node
+    - get this data from Tetrad i guess?
+
+decide:
+    - generate all possible permutations of dec_var values
+    - score each permutation, return one with best EU
